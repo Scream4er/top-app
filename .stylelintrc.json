@@ -1,14 +1,17 @@
 {
     "extends": [
-        "stylelint-config-standard"
+        "stylelint-prettier/recommended"
     ],
     "plugins": [
-        "stylelint-order"
+        "stylelint-prettier"
     ],
     "rules": {
-        "indentation": [
-            "tab"
-        ],
-        "color-hex-case": "upper"
+        "prettier/prettier": [
+            true,
+            {
+                "singleQuote": true,
+                "tabWidth": 2
+            }
+        ]
     }
 }
