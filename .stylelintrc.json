@@ -3,15 +3,24 @@
         "stylelint-prettier/recommended"
     ],
     "plugins": [
-        "stylelint-prettier"
+        "stylelint-prettier",
+        "stylelint-order"
     ],
     "rules": {
         "prettier/prettier": [
             true,
             {
                 "singleQuote": true,
-                "tabWidth": 2
+                "tabWidth": 4
             }
+        ],
+        "order/order": [
+            "custom-properties",
+            "declarations"
+        ],
+        "order/properties-order": [
+            "width",
+            "height"
         ]
     }
 }
